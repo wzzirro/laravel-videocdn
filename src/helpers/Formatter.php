@@ -1,6 +1,6 @@
 <?php
 
-namespace wzzirro\videocdn\helpers;
+namespace Wzzirro\VideoCdn\Helpers;
 
 /**
  * Class Formatter
