@@ -46,6 +46,11 @@ class VideoCdn
     /** @var Request */
     protected $request;
 
+    public function __construct(Repository $config)
+    {
+        $this->config = $config;
+    }
+
     public function getRequest()
     {
         if (!$this->request instanceof Request) {
