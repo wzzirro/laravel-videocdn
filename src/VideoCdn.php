@@ -1,22 +1,22 @@
 <?php
 
-namespace wzzirro\videocdn;
+namespace Wzzirro\VideoCdn;
 
 use Exception;
 use Illuminate\Contracts\Config\Repository;
-use wzzirro\videocdn\models\Animes;
-use wzzirro\videocdn\models\animeTvSeries\AnimeTvSeries;
-use wzzirro\videocdn\models\animeTvSeries\AnimeTvSeriesEpisodes;
-use wzzirro\videocdn\models\animeTvSeries\AnimeTvSeriesSeasons;
-use wzzirro\videocdn\models\ModelInterface;
-use wzzirro\videocdn\models\Movies;
-use wzzirro\videocdn\models\showTvSeries\ShowTvSeries;
-use wzzirro\videocdn\models\showTvSeries\ShowTvSeriesEpisodes;
-use wzzirro\videocdn\models\showTvSeries\ShowTvSeriesSeasons;
-use wzzirro\videocdn\models\Translations;
-use wzzirro\videocdn\models\tvSeries\TvSeries;
-use wzzirro\videocdn\models\tvSeries\TvSeriesEpisodes;
-use wzzirro\videocdn\models\tvSeries\TvSeriesSeasons;
+use Wzzirro\VideoCdn\models\Animes;
+use Wzzirro\VideoCdn\models\animeTvSeries\AnimeTvSeries;
+use Wzzirro\VideoCdn\models\animeTvSeries\AnimeTvSeriesEpisodes;
+use Wzzirro\VideoCdn\models\animeTvSeries\AnimeTvSeriesSeasons;
+use Wzzirro\VideoCdn\models\ModelInterface;
+use Wzzirro\VideoCdn\models\Movies;
+use Wzzirro\VideoCdn\models\showTvSeries\ShowTvSeries;
+use Wzzirro\VideoCdn\models\showTvSeries\ShowTvSeriesEpisodes;
+use Wzzirro\VideoCdn\models\showTvSeries\ShowTvSeriesSeasons;
+use Wzzirro\VideoCdn\models\Translations;
+use Wzzirro\VideoCdn\models\tvSeries\TvSeries;
+use Wzzirro\VideoCdn\models\tvSeries\TvSeriesEpisodes;
+use Wzzirro\VideoCdn\models\tvSeries\TvSeriesSeasons;
 
 /**
  * @package  VideoCDN

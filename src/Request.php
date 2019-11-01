@@ -1,6 +1,6 @@
 <?php
 
-namespace wzzirro\videocdn;
+namespace Wzzirro\VideoCdn;
 
 use GuzzleHttp\Client as GuzzleClient;
 

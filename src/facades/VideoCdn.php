@@ -1,6 +1,6 @@
 <?php
 
-namespace wzzirro\videocdn\facades;
+namespace Wzzirro\VideoCdn\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

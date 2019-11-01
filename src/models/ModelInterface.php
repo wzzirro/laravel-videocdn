@@ -1,7 +1,7 @@
 <?php
 
 
-namespace wzzirro\videocdn\models;
+namespace Wzzirro\VideoCdn\Models;
 
 /**
  *

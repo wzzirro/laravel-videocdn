@@ -1,9 +1,9 @@
 <?php
 
-namespace wzzirro\videocdn;
+namespace Wzzirro\VideoCdn;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
+use Illuminate\Support\ServiceProvider;
 
 /**
  *

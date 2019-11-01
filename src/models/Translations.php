@@ -1,6 +1,6 @@
 <?php
 
-namespace wzzirro\videocdn\models;
+namespace Wzzirro\VideoCdn\Models;
 
 class Translations extends AbstractModel
 {
