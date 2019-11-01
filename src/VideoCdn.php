@@ -71,7 +71,7 @@ class VideoCdn
      */
     public function __get($name)
     {
-        return call_user_func_array([$this->getRequest(), 'get'], [$name]);
+        return call_user_func_array([$this->getRequest(), '__get'], [$name]);
     }
 
     /**
