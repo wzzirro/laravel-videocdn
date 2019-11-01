@@ -1,7 +1,5 @@
 <?php
 
-use GuzzleHttp\Client as GuzzleClient;
-
 if (!file_exists('./vendor/autoload.php')) {
     die("Please run 'composer install'");
 }
@@ -12,7 +10,7 @@ session_start();
 
 $videocdn = new wzzirro\videocdn\VideoCdn();
 
-$translations = $videocdn->translations->list();
+$translations = $videocdn->animes->list();
 
 var_dump($translations);
 die();

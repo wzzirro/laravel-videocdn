@@ -2,11 +2,11 @@
 
 namespace wzzirro\videocdn\models;
 
-/**
- */
 class Translations extends AbstractModel
 {
     /**
+     * @see https://videocdn.tv/docs/translations
+     *
      * @return mixed
      */
     public function list()
