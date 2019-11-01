@@ -1,0 +1,16 @@
+{
+  "name": "laravel/laravel",
+  "description": "A Laravel wrapper for VideoCDN",
+  "require": {
+    "php": ">=7.0.0",
+    "illuminate/support": "~5.0",
+    "guzzlehttp/guzzle": "~6.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "wzzirro\\videocdn\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
