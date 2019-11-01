@@ -3,7 +3,7 @@
 namespace wzzirro\videocdn;
 
 use Exception;
-use wzzirro\videocdn\helpers\Formatter;
+use Illuminate\Contracts\Config\Repository;
 use wzzirro\videocdn\models\Animes;
 use wzzirro\videocdn\models\animeTvSeries\AnimeTvSeries;
 use wzzirro\videocdn\models\animeTvSeries\AnimeTvSeriesEpisodes;
@@ -41,7 +41,22 @@ use wzzirro\videocdn\models\tvSeries\TvSeriesSeasons;
  */
 class VideoCdn
 {
-    private $parameters;
+    /** @var Repository */
+    protected $config;
+    /** @var Request */
+    protected $request;
+
+    public function getRequest()
+    {
+        if (!$this->request instanceof Request) {
+            $this->request = new Request(
+                $this->config->get('videocdn.apiUrl'),
+                $this->config->get('videocdn.apiToken'),
+                $this->config->get('videocdn.defaultUserAgent')
+            );
+        }
+        return $this->request;
+    }
 
     /**
      * @param $name
@@ -51,12 +66,14 @@ class VideoCdn
      */
     public function __get($name)
     {
-        $className = '\\wzzirro\\videocdn\\models\\' . Formatter::camelCase($name);
+        return call_user_func_array([$this->getRequest(), '__get'], [$name]);
+    }
 
-        if (!class_exists($className)) {
-            throw new Exception("Model does not exists: {$className}");
-        }
-
-        return new $className($this->parameters);
+    /**
+     * @return Repository
+     */
+    public function getConfig(): Repository
+    {
+        return $this->config;
     }
 }

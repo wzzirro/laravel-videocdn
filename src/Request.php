@@ -8,24 +8,15 @@ class Request
 {
     private $client;
 
-    public function __construct()
+    public function __construct(string $apiUrl, string $apiToken, string $defaultUserAgent)
     {
-//        $this->client = new GuzzleClient([
-//            'base_uri' => config('videocdn.apiUrl'),
-//            'headers'  => [
-//                'User-Agent' => $_SERVER['HTTP_USER_AGENT'] ?? config('videocdn.defaultUserAgent'),
-//            ],
-//            'query'    => [
-//                'api_token' => config('videocdn.apiToken'),
-//            ]
-//        ]);
         $this->client = new GuzzleClient([
-            'base_uri' => 'https://videocdn.tv/api/',
+            'base_uri' => $apiUrl,
             'headers'  => [
-                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+                'User-Agent' => $_SERVER['HTTP_USER_AGENT'] ?? $defaultUserAgent,
             ],
             'query'    => [
-                'api_token' => '5iW5PydmPpOW6oO9odmRwVSgoSr7iiRZ',
+                'api_token' => $apiToken,
             ]
         ]);
     }
