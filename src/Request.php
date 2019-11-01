@@ -4,7 +4,7 @@ namespace Wzzirro\VideoCdn;
 
 use Exception;
 use GuzzleHttp\Client as GuzzleClient;
-use wzzirro\videocdn\helpers\Formatter;
+use Wzzirro\VideoCdn\Helpers\Formatter;
 use Wzzirro\VideoCdn\Models\ModelInterface;
 
 class Request

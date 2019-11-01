@@ -3,9 +3,7 @@
 namespace Wzzirro\VideoCdn\Helpers;
 
 /**
- * Class Formatter
  *
- * @package wzzirro\videocdn\helpers
  */
 class Formatter
 {
