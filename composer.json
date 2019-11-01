@@ -1,5 +1,5 @@
 {
-  "name": "laravel/laravel",
+  "name": "awesomecinema/laravel-videocdn",
   "description": "A Laravel wrapper for VideoCDN",
   "require": {
     "php": ">=7.0.0",
