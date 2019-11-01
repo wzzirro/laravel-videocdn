@@ -2,11 +2,15 @@
 
 namespace Wzzirro\VideoCdn;
 
+use Exception;
 use GuzzleHttp\Client as GuzzleClient;
+use wzzirro\videocdn\helpers\Formatter;
+use Wzzirro\VideoCdn\Models\ModelInterface;
 
 class Request
 {
     private $client;
+    public  $parameters;
 
     public function __construct(string $apiUrl, string $apiToken, string $defaultUserAgent)
     {
@@ -31,5 +35,21 @@ class Request
         ]);
 
         return $request->getBody()->getContents();
+    }
+
+    /**
+     * @param $name
+     *
+     * @return ModelInterface
+     * @throws Exception
+     */
+    public function __get($name)
+    {
+        $classname = '\\Wzzirro\VideoCdn\Models\\' . Formatter::camelCase($name);
+        if (!class_exists($classname)) {
+            throw new Exception('Model does not exists: ' . $name);
+        }
+
+        return new $classname($this->parameters);
     }
 }
