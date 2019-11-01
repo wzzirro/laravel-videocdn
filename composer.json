@@ -10,16 +10,16 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Wzzirro\\Videocdn\\VideoCdnServiceProvider"
+        "Wzzirro\\VideoCdn\\VideoCdnServiceProvider"
       ],
       "aliases": {
-        "videocdn": "Wzzirro\\Videocdn\\Facades\\VideoCdn"
+        "videocdn": "Wzzirro\\VideoCdn\\Facades\\VideoCdn"
       }
     }
   },
   "autoload": {
     "psr-4": {
-      "Wzzirro\\Videocdn\\": "src/"
+      "Wzzirro\\VideoCdn\\": "src/"
     }
   },
   "minimum-stability": "dev"
