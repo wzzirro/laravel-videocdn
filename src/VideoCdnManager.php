@@ -19,7 +19,6 @@ use Wzzirro\VideoCdn\models\tvSeries\TvSeriesEpisodes;
 use Wzzirro\VideoCdn\models\tvSeries\TvSeriesSeasons;
 
 /**
- * @package  VideoCDN
  * @author Philip Poteryaev <wzzirro@gmail.com>
  *
  * @property Translations          $translations
