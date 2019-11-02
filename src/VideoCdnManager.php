@@ -70,7 +70,7 @@ class VideoCdnManager
      */
     public function __get($name)
     {
-        return call_user_func_array([$this->getRequest(), '__get'], [$name]);
+        return call_user_func_array([$this->getVideoCdn(), '__get'], [$name]);
     }
 
     /**
