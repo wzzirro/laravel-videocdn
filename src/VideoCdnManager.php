@@ -42,24 +42,24 @@ class VideoCdnManager
 {
     /** @var Repository */
     protected $config;
-    /** @var Request */
-    protected $request;
+    /** @var VideoCdn */
+    protected $videoCdn;
 
     public function __construct(Repository $config)
     {
         $this->config = $config;
     }
 
-    public function getRequest()
+    public function getVideoCdn()
     {
-        if (!$this->request instanceof Request) {
-            $this->request = new Request(
+        if (!$this->videoCdn instanceof VideoCdn) {
+            $this->videoCdn = new VideoCdn(
                 $this->config->get('videocdn.apiUrl'),
                 $this->config->get('videocdn.apiToken'),
                 $this->config->get('videocdn.defaultUserAgent')
             );
         }
-        return $this->request;
+        return $this->videoCdn;
     }
 
     /**
