@@ -13,12 +13,12 @@ DI:
 ```PHP
 <?php
 use Illuminate\Support\Facades\Route;
-use wzzirro\videocdn\VideoCdn;
+use wzzirro\videocdn\VideoCdnManager;
 
-Route::get('/',  function (VideoCdn $videoCdn) 
+Route::get('/',  function (VideoCdnManager $videoCdn) 
 { 
     $translations = $videoCdn->translations->list();
-    var_dump($translations);
+    return var_dump($translations);
 });
 
 ?>

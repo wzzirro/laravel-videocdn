@@ -27,7 +27,7 @@ class VideoCdnServiceProvider extends ServiceProvider
     {
         $this->app->singleton('videocdn', function (Container $app) {
             $config = $app['config'];
-            return new VideoCdn($config);
+            return new VideoCdnManager($config);
         });
 
     }
