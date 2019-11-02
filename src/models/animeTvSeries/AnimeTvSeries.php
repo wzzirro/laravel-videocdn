@@ -15,7 +15,7 @@ class AnimeTvSeries extends AbstractModel
      *
      * @return mixed
      */
-    public function list(array $params = [])
+    public function call(array $params = [])
     {
         $response = $this->get('anime-tv-series', $params);
 

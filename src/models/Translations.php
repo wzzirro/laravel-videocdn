@@ -9,7 +9,7 @@ class Translations extends AbstractModel
      *
      * @return mixed
      */
-    public function list()
+    public function call()
     {
         $response = $this->get('translations');
 

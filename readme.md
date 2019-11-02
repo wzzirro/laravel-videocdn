@@ -17,7 +17,7 @@ use Wzzirro\VideoCdn\VideoCdnManager;
 
 Route::get('/',  function (VideoCdnManager $videoCdn) 
 { 
-    $translations = $videoCdn->translations->list();
+    $translations = $videoCdn->translations->call();
     return var_dump($translations);
 });
 

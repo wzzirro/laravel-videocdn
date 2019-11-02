@@ -13,7 +13,7 @@ class Animes extends AbstractModel
      *
      * @return mixed
      */
-    public function list(array $params = [])
+    public function call(array $params = [])
     {
         $response = $this->get('animes', $params);
 
