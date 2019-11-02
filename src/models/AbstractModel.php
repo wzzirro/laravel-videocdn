@@ -3,7 +3,7 @@
 
 namespace Wzzirro\VideoCdn\Models;
 
-use wzzirro\videocdn\Request;
+use Wzzirro\VideoCdn\Request;
 
 /**
  *

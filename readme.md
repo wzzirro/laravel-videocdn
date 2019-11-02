@@ -13,7 +13,7 @@ DI:
 ```PHP
 <?php
 use Illuminate\Support\Facades\Route;
-use wzzirro\videocdn\VideoCdnManager;
+use Wzzirro\VideoCdn\VideoCdnManager;
 
 Route::get('/',  function (VideoCdnManager $videoCdn) 
 { 
