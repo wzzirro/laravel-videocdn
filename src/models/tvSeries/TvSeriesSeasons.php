@@ -21,6 +21,6 @@ class TvSeriesSeasons extends AbstractModel
 
         $response = json_decode($response);
 
-        return $response->data;
+        return $response;
     }
 }

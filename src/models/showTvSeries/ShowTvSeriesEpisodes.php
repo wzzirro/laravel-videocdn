@@ -21,6 +21,6 @@ class ShowTvSeriesEpisodes extends AbstractModel
 
         $response = json_decode($response);
 
-        return $response->data;
+        return $response;
     }
 }
