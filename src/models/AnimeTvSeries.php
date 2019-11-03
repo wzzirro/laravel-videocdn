@@ -1,10 +1,6 @@
 <?php
 
-
-namespace Wzzirro\VideoCdn\Models\animeTvSeries;
-
-
-use Wzzirro\VideoCdn\Models\AbstractModel;
+namespace Wzzirro\VideoCdn\Models;
 
 class AnimeTvSeries extends AbstractModel
 {
