@@ -5,18 +5,15 @@ namespace Wzzirro\VideoCdn;
 use Exception;
 use Wzzirro\VideoCdn\Helpers\Formatter;
 use Wzzirro\VideoCdn\Models\Animes;
-use Wzzirro\VideoCdn\Models\animeTvSeries\AnimeTvSeries;
-use Wzzirro\VideoCdn\Models\animeTvSeries\AnimeTvSeriesEpisodes;
-use Wzzirro\VideoCdn\Models\animeTvSeries\AnimeTvSeriesSeasons;
+use Wzzirro\VideoCdn\Models\AnimeTvSeries;
+use Wzzirro\VideoCdn\Models\AnimeTvSeriesEpisodes;
+use Wzzirro\VideoCdn\Models\AnimeTvSeriesSeasons;
 use Wzzirro\VideoCdn\Models\ModelInterface;
 use Wzzirro\VideoCdn\Models\Movies;
-use Wzzirro\VideoCdn\Models\showTvSeries\ShowTvSeries;
-use Wzzirro\VideoCdn\Models\showTvSeries\ShowTvSeriesEpisodes;
-use Wzzirro\VideoCdn\Models\showTvSeries\ShowTvSeriesSeasons;
 use Wzzirro\VideoCdn\Models\Translations;
-use Wzzirro\VideoCdn\Models\tvSeries\TvSeries;
-use Wzzirro\VideoCdn\Models\tvSeries\TvSeriesEpisodes;
-use Wzzirro\VideoCdn\Models\tvSeries\TvSeriesSeasons;
+use Wzzirro\VideoCdn\Models\TvSeries;
+use Wzzirro\VideoCdn\Models\TvSeriesEpisodes;
+use Wzzirro\VideoCdn\Models\TvSeriesSeasons;
 
 /**
  * @author Philip Poteryaev <wzzirro@gmail.com>
@@ -28,10 +25,6 @@ use Wzzirro\VideoCdn\Models\tvSeries\TvSeriesSeasons;
  * @property TvSeries              $tvSeries
  * @property TvSeriesSeasons       $tvSeriesSeasons
  * @property TvSeriesEpisodes      $tvSeriesEpisodes
- *
- * @property ShowTvSeries          $showTvSeries
- * @property ShowTvSeriesSeasons   $showTvSeriesSeasons
- * @property ShowTvSeriesEpisodes  $showTvSeriesEpisodes
  *
  * @property AnimeTvSeries         $animeTvSeries
  * @property AnimeTvSeriesSeasons  $animeTvSeriesSeasons
