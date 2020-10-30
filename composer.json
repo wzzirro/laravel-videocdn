@@ -1,10 +1,10 @@
 {
-  "name": "awesomecinema/laravel-videocdn",
-  "description": "A Laravel wrapper for VideoCDN",
+  "name": "wzzirro/laravel-videocdn",
+  "description": "A Laravel wrapper for VideoCDN.tv",
   "require": {
-    "php": "^7.2",
-    "illuminate/support": "~6.2",
-    "guzzlehttp/guzzle": "~6.0",
+    "php": "^7.4",
+    "illuminate/support": "^8.12",
+    "guzzlehttp/guzzle": "~7.0",
     "ext-json": "*"
   },
   "extra": {
