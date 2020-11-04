@@ -1,5 +1,5 @@
 {
-  "name": "wzzirro/laravel-videocdn",
+  "name": "wzzirro/videocdn",
   "description": "A Laravel wrapper for VideoCDN.tv",
   "require": {
     "php": "^7.4",
